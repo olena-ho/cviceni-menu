@@ -16,10 +16,17 @@ body {
 .logo {
   font-weight: bold;
   text-align: center;
+  padding: 20px;
 }
 
-ul {
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
   margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 a {
@@ -35,6 +42,26 @@ a:hover {
   color: white;
 }
 
+@media screen and (min-width: 640px) {
+  .menu ul {
+    flex-direction: row;
+  }
+
+  .menu li {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hlavicka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu li {
+    width: auto;
+  }
+}
 /* ---------------------------------------------------- */
 
 /*
